@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Job ID Joiner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-gamepad"></i> Roblox Job ID Joiner</h1>
+            <p>Enter a Roblox Job ID to join a specific game server</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input 
+                        type="text" 
+                        id="jobIdInput" 
+                        placeholder="Enter Job ID (e.g., abc123def-4567-8901-ghij)"
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <div class="button-group">
+                    <button id="joinBtn" class="btn-primary">
+                        <i class="fas fa-play"></i> Join Game
+                    </button>
+                    <button id="copyBtn" class="btn-secondary">
+                        <i class="fas fa-copy"></i> Copy Link
+                    </button>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-box">
+                    <h3><i class="fas fa-info-circle"></i> How to find Job ID</h3>
+                    <ol>
+                        <li>Open Roblox in a browser</li>
+                        <li>Join any game</li>
+                        <li>Look at the URL: <code>...?jobId=YOUR_JOB_ID</code></li>
+                        <li>Copy the Job ID after <code>jobId=</code></li>
+                    </ol>
+                </div>
+                
+                <div class="info-box">
+                    <h3><i class="fas fa-bolt"></i> Quick Join</h3>
+                    <div class="quick-join">
+                        <p>Direct URL format:</p>
+                        <code id="directUrl">https://your-app.vercel.app?job=JOB_ID</code>
+                        <p>Example: <code>https://your-app.vercel.app?job=abc123def</code></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="result" class="result-section"></div>
+        </div>
+        
+        <div class="footer">
+            <p>Not affiliated with Roblox Corporation</p>
+            <p class="deploy-note">
+                <i class="fas fa-cloud-upload-alt"></i> 
+                Deployed on Vercel • 
+                <a href="https://github.com/yourusername/roblox-job-joiner" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
