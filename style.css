@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #191a1c 0%, #2d2f33 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(25, 26, 28, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00a2ff;
+}
+
+.header h1 {
+    color: #00a2ff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header h1 i {
+    margin-right: 15px;
+}
+
+.header p {
+    color: #aaa;
+    font-size: 1.1em;
+}
+
+.input-section {
+    background: #1e1f21;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #2a2b2e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #3a3b3e;
+}
+
+.input-group i {
+    color: #00a2ff;
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00a2ff 0%, #0088cc 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0088cc 0%, #0077b3 100%);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #3a3b3e;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #4a4b4e;
+    transform: translateY(-2px);
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: #1e1f21;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.info-box h3 {
+    color: #00a2ff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box ol {
+    margin-left: 20px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.info-box li {
+    margin-bottom: 8px;
+}
+
+.info-box code {
+    background: #2a2b2e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #00ffaa;
+    font-family: monospace;
+    word-break: break-all;
+    display: block;
+    margin: 10px 0;
+}
+
+.quick-join p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.result-section {
+    background: #1e1f21;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success {
+    color: #00ffaa;
+    background: rgba(0, 255, 170, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.error {
+    color: #ff5555;
+    background: rgba(255, 85, 85, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.deploy-note {
+    margin-top: 10px;
+    color: #00a2ff;
+}
+
+.deploy-note a {
+    color: #00a2ff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.deploy-note a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+}
